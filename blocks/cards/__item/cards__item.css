@@ -1,0 +1,17 @@
+.item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  width: 240px;
+}
+.item:nth-of-type(4n){
+  margin-bottom: 0;
+}
+.item:nth-of-type(5n){
+  margin-bottom: 0;
+}
+.item:nth-of-type(6n){
+  opacity: 0;
+  margin-bottom: 0;
+}

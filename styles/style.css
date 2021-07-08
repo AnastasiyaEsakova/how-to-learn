@@ -1,4 +1,14 @@
-.page {
+/* @keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  } to{
+    transform: rotate(360deg);
+  }
+}
+.rotation{
+  animation: rotation 20s linear infinite;
+} */
+/* .page {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
@@ -9,13 +19,17 @@
   min-height: 600px;
   max-height: 756px;
   background-color:  #f2f2f2;
+  overflow: hidden;
 }
 .header_position{
   position: relative;
   display: flex;
   align-items: center;
-}
-.logo{
+} */
+
+
+/* добавить! */
+/* .logo{
   width: 183px;
   height: 35px;
   background-size: contain;
@@ -26,8 +40,11 @@
   position: absolute;
   top: 30px;
   left: 64px;
-}
-.header__title{
+} */
+
+
+
+/* .header__title{
   font-size: 102px;
   line-height: 96px;
   font-weight: bolder;
@@ -52,6 +69,11 @@
 .header__link{
   text-decoration: none;
   color:#2f80ed;
+  opacity: 1;
+  transition: opacity .4s;
+}
+.header__link:hover{
+  opacity: .5;
 }
 .header__main-illustration{
   width: 765px;
@@ -69,14 +91,14 @@
   right: 0;
   top: 64px;
   z-index: 0;
-}
+} */
 /* Две колонки */
-.two-columns{
+/* .two-columns{
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
-.two-columns_indent{
+.two-columns_section_description{
   margin: 100px auto;
   margin-bottom: 0;
 }
@@ -110,9 +132,89 @@
   font-weight: bolder;
   padding: 0;
   margin: 0 auto;
+} */
+
+
+
+/* Техники обучения */
+/* .techniques{
+  width: 80%;
+  margin: 0 auto;
 }
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  width: 240px;
+}
+.item:nth-of-type(4n){
+  margin-bottom: 0;
+}
+.item:nth-of-type(5n){
+  margin-bottom: 0;
+}
+.item:nth-of-type(6n){
+  opacity: 0;
+  margin-bottom: 0;
+}
+.cards__image{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0px 40px 43px;
+}
+.cards__title{
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.cards__description{
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+} */
+/* Видео */
+/* .video__iframes{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+.video__iframe{
+  margin-right: 20px;
+  width: 515px;
+  height: 316px;
+}
+.video__iframe:nth-of-type(2n){
+  margin:0;
+} */
+/* Оакли */
+/* .oakley{
+  background-color: #f2f2f2;
+}
+.two-columns_section_oakley{
+  margin: 0 auto;
+  padding-top: 160px;
+} */
 /* Цифры и факты */
-.section-title{
+/* .section-title{
   line-height: 1.15em;
   font-size: 60px;
   font-weight: bolder;
@@ -170,9 +272,9 @@
 .table__text:last-of-type{
   padding: 0;
   margin: 0;
-}
+} */
 /* Метод Фейнмана */
-.feynman{
+/* .feynman{
   background-color: #f2f2f2;
 }
 .feynman_position{
@@ -186,7 +288,7 @@
   text-align: center;
   width: 648px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
   z-index: 2;
 }
@@ -210,8 +312,14 @@
   top: 50%;
   right: 48px;
   z-index: 2;
+  opacity: 1;
+  transition: opacity .4s;
 }
-.feynman__illustration{
+.feynman__link:hover{
+  opacity: .5;
+}
+/* Добавить в изображение фоновое у блока общего */
+/*.feynman__illustration{
   background-image: url(../images/feynman.png);
   width: 867px;
   height: 637px;
@@ -219,9 +327,71 @@
   bottom: 0;
   left: 0;
   z-index: 0;
+} */
+/* Салмон хан */
+/* .khan{
+  background-color: #f2f2f2;
+
 }
+.khan__container{
+  width:80%;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+.khan__author{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title{
+  line-height: 1.15em;
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+.khan__quote{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin-bottom: 36px;
+}
+.khan__quote-author{
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.khan__quote-author-subline{
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 68px;
+}
+
+.khan__book-container{
+  display: flex;
+}
+.khan__book-pic{
+  background-image: url(../images/khan-book.jpg);
+  width: 620px;
+  height: 608px;
+}
+.khan__buy-link{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  margin-left: 48px;
+  opacity: 1;
+  transition: opacity .4s;
+}
+.khan__buy-link:hover{
+  opacity: .5;
+} */
 /* Принципы обучения */
-.kaufman{
+/* .kaufman{
   background-color: #1f1f1f;
 }
 .kaufman_position{
@@ -262,24 +432,52 @@
   right: -210px;
   top: 0;
   z-index: 0;
+} */
+/* Полезные ресурсы */
+/* .resources__logo-zone{
+  width: 1100px;
+  margin:0 auto;
+  margin-top: 80px;
+  margin-bottom: 217px;
+  display: flex;
 }
+.resources__logo{
+  width: 270px;
+  height: 38px;
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.resources__logo_name_arzamas{
+  background-image: url(../images/logo/resources-arzamas.svg);
+}
+.resources__logo_name_n1{
+  background-image: url(../images/logo/resources-n1.svg);
+}
+.resources__logo_name_strelka{
+  background-image: url(../images/logo/resources-strelka.svg);
+}
+.resources__logo_name_polka{
+  background-image: url(../images/logo/resources-polka.svg);
+} */
 /* Футер */
-.footer{
+/* .footer{
   background-color: #1f1f1f;
 }
 .footer_size{
   padding-top: 60px;
   padding-bottom: 40px;
 }
-.logo_place_footer{
+/* .logo_place_footer{
   background-image: url(../images/logo_place_footer.svg);
-}
-.footer__columns{
+} */
+
+/* .footer__columns{
   display: flex;
   min-height: 250px;
   justify-content: space-around;
 }
-.footer__columns_copyright{
+.footer__columns_content_copyright{
   display: flex;
   flex-basis: 711px;
   flex-direction: column;
@@ -305,8 +503,7 @@
   margin: 0 auto;
   padding: 0;
   padding-bottom: 16px;
-  display: flex;
-  flex-direction: column;
+  list-style-type: none;
 }
 .footer__column-link{
   line-height: 30px;
@@ -315,9 +512,14 @@
   color: #fff;
   text-decoration: none;
   padding: 0;
+  opacity: 1;
+  transition: opacity .4s;
+}
+.footer__column-link:hover{
+  opacity: .5;
 }
 .footer__social-icon{
   margin-right: 10px;
   width: 16px;
   height: 16px;
-}
+} */
